@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Pitcher {
 
 	private int[] ball;
-	private int m;//���� ���� �� 3
+	private int m;//배열의 크기 3
 	public Pitcher() {
 		this(3);
 	}
@@ -17,9 +17,9 @@ public class Pitcher {
 		return ball;
 	}
 	private void init(){
-		Arrays.fill(ball, -1);//-1�� ä���
+		Arrays.fill(ball, -1);//-1로 채움
 	}
-	private int makeOne(){//0~9������ ����
+	private int makeOne(){//0~9중에 랜덤한수
 		return (int)(Math.random()*10);
 	}
 	private boolean hasSame(int num){
